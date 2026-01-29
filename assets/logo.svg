@@ -1,0 +1,20 @@
+<svg width="320" height="360" viewBox="0 0 320 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Livgarde Security logo">
+  <defs>
+    <linearGradient id="lg-blue" x1="20" y1="40" x2="300" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2f8cff"/>
+      <stop offset="1" stop-color="#1e63d9"/>
+    </linearGradient>
+    <linearGradient id="lg-navy" x1="40" y1="60" x2="280" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071426"/>
+      <stop offset="1" stop-color="#030a15"/>
+    </linearGradient>
+  </defs>
+  <path d="M160 18C215 36 257 47 298 58V184C298 250 249 312 160 342C71 312 22 250 22 184V58C63 47 105 36 160 18Z" fill="#ffffff"/>
+  <path d="M160 36C207 51 244 61 278 71V182C278 238 237 289 160 313C83 289 42 238 42 182V71C76 61 113 51 160 36Z" fill="url(#lg-navy)"/>
+  <path d="M56 88C101 76 133 64 160 54C201 68 233 79 264 88V177C264 223 230 264 160 286C90 264 56 223 56 177V88Z" fill="url(#lg-blue)"/>
+  <path d="M160 94C185 105 205 113 236 124V168C236 204 208 236 160 256C112 236 84 204 84 168V124C115 113 135 105 160 94Z" fill="url(#lg-navy)"/>
+  <path d="M160 124C175 131 192 138 212 146V166C212 188 193 210 160 222C127 210 108 188 108 166V146C128 138 145 131 160 124Z" fill="#ffffff"/>
+  <path d="M45 108C90 92 128 76 160 64C190 74 216 83 260 98L248 122C212 106 190 97 160 86C127 98 102 110 72 124L45 108Z" fill="#ffffff"/>
+  <path d="M160 92L200 108L183 138L160 122L137 138L120 108L160 92Z" fill="#ffffff"/>
+  <path d="M238 106L270 118L256 144L225 134L238 106Z" fill="#ffffff"/>
+</svg>

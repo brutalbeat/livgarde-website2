@@ -1,0 +1,56 @@
+<svg width="1600" height="720" viewBox="0 0 1600 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1d34"/>
+      <stop offset="1" stop-color="#071426"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102749"/>
+      <stop offset="1" stop-color="#030a15"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.6" r="0.8">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0c1d34" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="720" fill="url(#g0)"/>
+  <rect width="1600" height="720" fill="url(#g1)" opacity="0.55"/>
+  <rect width="1600" height="720" fill="url(#glow)"/>
+
+  <!-- soft bokeh lights -->
+  <g filter="url(#blur)">
+    <circle cx="350" cy="360" r="80" fill="#2f8cff" opacity="0.35"/>
+    <circle cx="520" cy="420" r="70" fill="#8bc5ff" opacity="0.25"/>
+    <circle cx="740" cy="400" r="90" fill="#34d1a1" opacity="0.16"/>
+    <circle cx="940" cy="420" r="110" fill="#2f8cff" opacity="0.22"/>
+    <circle cx="1200" cy="380" r="90" fill="#8bc5ff" opacity="0.18"/>
+  </g>
+
+  <!-- skyline silhouette -->
+  <g>
+    <rect x="0" y="420" width="1600" height="300" fill="#050e1d"/>
+    <rect x="40" y="390" width="120" height="330" fill="#071426"/>
+    <rect x="190" y="360" width="90" height="360" fill="#0a1830"/>
+    <rect x="300" y="410" width="70" height="310" fill="#081528"/>
+    <rect x="390" y="340" width="120" height="380" fill="#0b1a33"/>
+    <rect x="540" y="380" width="130" height="340" fill="#081528"/>
+    <rect x="700" y="320" width="150" height="400" fill="#0b1a33"/>
+    <rect x="880" y="360" width="110" height="360" fill="#081528"/>
+    <rect x="1020" y="390" width="160" height="330" fill="#0b1a33"/>
+    <rect x="1210" y="350" width="110" height="370" fill="#081528"/>
+    <rect x="1340" y="400" width="90" height="320" fill="#0b1a33"/>
+    <rect x="1450" y="370" width="120" height="350" fill="#081528"/>
+  </g>
+
+  <!-- light streaks -->
+  <g opacity="0.12" fill="#8bc5ff">
+    <rect x="140" y="520" width="80" height="6"/>
+    <rect x="340" y="560" width="120" height="6"/>
+    <rect x="610" y="540" width="150" height="6"/>
+    <rect x="910" y="575" width="160" height="6"/>
+    <rect x="1240" y="545" width="120" height="6"/>
+  </g>
+</svg>
