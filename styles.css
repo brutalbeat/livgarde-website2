@@ -263,18 +263,23 @@ img {
   text-align: right;
 }
 
+.hero-figure-card.align-left {
+  text-align: left;
+}
+
 .hero-figure-card span {
   display: block;
-  font-size: 0.75rem;
+  font-size: clamp(0.74rem, 0.45vw + 0.66rem, 0.9rem);
   color: var(--color-slate-400);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .hero-figure-card strong {
-  font-size: 1.1rem;
+  font-size: clamp(1.02rem, 0.8vw + 0.78rem, 1.35rem);
   display: block;
   margin-top: 8px;
+  white-space: nowrap;
 }
 
 .section {
@@ -347,6 +352,105 @@ img {
   padding: 7px 14px;
 }
 
+.contact-form-wrap {
+  margin-top: 28px;
+  background: rgba(10, 18, 32, 0.85);
+  border: 1px solid rgba(120, 150, 200, 0.22);
+  border-radius: 16px;
+  padding: 22px;
+  text-align: left;
+}
+
+.contact-form-wrap h3 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.contact-form-wrap p {
+  margin: 0 0 16px;
+  color: var(--color-slate-300);
+  font-size: 0.9rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 18px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-fieldset {
+  border: 1px solid rgba(120, 150, 200, 0.22);
+  border-radius: 14px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 14px;
+  background: rgba(7, 13, 24, 0.75);
+}
+
+.form-fieldset legend {
+  padding: 0 10px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--color-slate-300);
+}
+
+.form-row.span-6 {
+  grid-column: span 6;
+}
+
+.form-row.span-12 {
+  grid-column: span 12;
+}
+
+.contact-form label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-slate-400);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  background: rgba(8, 14, 26, 0.9);
+  border: 1px solid rgba(120, 150, 200, 0.3);
+  color: var(--color-slate-50);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(170, 180, 214, 0.6);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: rgba(92, 162, 255, 0.7);
+  box-shadow: 0 0 0 2px rgba(92, 162, 255, 0.2);
+}
+
+.form-submit {
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.honeypot {
+  display: none;
+}
+
 .card .tiny-button {
   display: inline-block;
   font-size: 0.7rem;
@@ -365,6 +469,10 @@ img {
   gap: 24px;
   align-items: center;
   text-align: left;
+}
+
+.split.split-top {
+  align-items: flex-start;
 }
 
 .section.dark {
@@ -573,17 +681,57 @@ img {
 }
 
 .faq-item {
-  padding: 14px 16px;
   border-radius: 12px;
   border: 1px solid rgba(120, 150, 200, 0.18);
   background: rgba(8, 14, 26, 0.9);
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
+  overflow: hidden;
 }
 
-.faq-item span {
+.faq-question {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--color-slate-50);
+  text-align: left;
+  padding: 14px 44px 14px 16px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--color-slate-300);
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.faq-item.is-open .faq-question::after {
+  content: "–";
+  color: var(--color-blue-300);
+}
+
+.faq-answer {
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  color: var(--color-slate-300);
+  transition: max-height 0.25s ease;
+}
+
+.faq-item.is-open .faq-answer {
+  padding-bottom: 14px;
+  max-height: 160px;
+}
+
+.faq-answer p {
+  margin: 0;
+  font-size: 0.85rem;
 }
 
 .location-grid {
@@ -664,5 +812,18 @@ img {
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-fieldset {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row.span-6,
+  .form-row.span-12 {
+    grid-column: auto;
   }
 }
