@@ -156,8 +156,11 @@
         <h2>Request a Quote</h2>
         <p class="lead">Tell us about your site and coverage needs. We will reply within 1 business day.</p>
         <div class="contact-form-wrap">
-          <form class="contact-form" name="livgarde-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <form class="contact-form" name="livgarde-contact" method="POST" action="/contact-success.html" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="livgarde-contact" />
+            <p hidden>
+              <label>Do not fill this out: <input name="bot-field" /></label>
+            </p>
             <fieldset class="form-fieldset">
               <legend>Contact Information</legend>
               <div class="form-row span-6">
