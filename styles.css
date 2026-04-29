@@ -174,7 +174,7 @@ img {
 
 .hero {
   position: relative;
-  background: linear-gradient(120deg, rgba(2, 8, 18, 0.7), rgba(7, 16, 31, 0.5)), url('./assets/hero.svg');
+  background: linear-gradient(120deg, rgba(2, 8, 18, 0.7), rgba(7, 16, 31, 0.5)), url('./assets/LivgardeCar.JPG');
   background-size: cover;
   background-position: center;
   padding: 60px 50px 80px;
