@@ -174,10 +174,11 @@ img {
 
 .hero {
   position: relative;
-  background: linear-gradient(120deg, rgba(2, 8, 18, 0.7), rgba(7, 16, 31, 0.5)), url('./assets/LivgardeCar.JPG');
+  background: linear-gradient(120deg, rgba(2, 8, 18, 0.7), rgba(7, 16, 31, 0.5)), url('./assets/workercar_tl.png');
   background-size: cover;
-  background-position: center;
+  background-position: center 25%;
   padding: 60px 50px 80px;
+  min-height: 600px;
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   gap: 24px;
@@ -660,7 +661,26 @@ img {
   background-size: cover;
   background-position: center;
   padding: 46px 48px 52px;
+  min-height: 420px;
   text-align: left;
+}
+
+.hero-banner--services {
+  background: linear-gradient(120deg, rgba(2, 8, 18, 0.65), rgba(6, 14, 26, 0.6)), url('./assets/LivgardeCar.JPG');
+  background-size: cover;
+  background-position: center 40%;
+}
+
+.hero-banner--careers {
+  background: linear-gradient(120deg, rgba(2, 8, 18, 0.65), rgba(6, 14, 26, 0.6)), url('./assets/LivgardeServices.png');
+  background-size: cover;
+  background-position: center 10%;
+}
+
+.hero-banner--contact {
+  background: linear-gradient(120deg, rgba(2, 8, 18, 0.65), rgba(6, 14, 26, 0.6)), url('./assets/security_br.png');
+  background-size: cover;
+  background-position: center 10%;
 }
 
 .hero-banner h1 {
