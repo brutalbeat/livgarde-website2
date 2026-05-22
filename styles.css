@@ -3,10 +3,10 @@
 :root {
   --font-sans: "Montserrat", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  --color-navy-950: #030a15;
-  --color-navy-900: #071426;
-  --color-navy-800: #0c1d34;
-  --color-navy-700: #102749;
+  --color-navy-950: #091830;
+  --color-navy-900: #0e2040;
+  --color-navy-800: #142d52;
+  --color-navy-700: #1a3a65;
 
   --color-slate-50: #f1f5ff;
   --color-slate-100: #e3e9f5;
@@ -69,7 +69,7 @@ img {
   max-width: 100%;
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(180deg, rgba(8, 14, 26, 0.96) 0%, rgba(8, 12, 22, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(13, 28, 54, 0.97) 0%, rgba(10, 22, 46, 0.98) 100%);
   border-radius: 0;
   box-shadow: none;
   border: none;
@@ -81,7 +81,7 @@ img {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 18px 32px;
-  background: linear-gradient(90deg, rgba(6, 12, 22, 0.96) 0%, rgba(12, 20, 34, 0.96) 100%);
+  background: linear-gradient(90deg, rgba(9, 20, 40, 0.97) 0%, rgba(15, 28, 54, 0.97) 100%);
   border-bottom: 1px solid rgba(90, 110, 160, 0.18);
   gap: 12px;
 }
@@ -104,7 +104,7 @@ img {
   padding: 6px 10px;
   border-radius: 999px;
   border: 1px solid rgba(92, 162, 255, 0.35);
-  background: rgba(10, 18, 32, 0.8);
+  background: rgba(14, 26, 52, 0.85);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
   transition: 0.2s ease;
 }
@@ -174,7 +174,7 @@ img {
 
 .hero {
   position: relative;
-  background: linear-gradient(120deg, rgba(2, 8, 18, 0.7), rgba(7, 16, 31, 0.5)), url('./assets/workercar_tl.png');
+  background: linear-gradient(120deg, rgba(5, 14, 32, 0.45), rgba(7, 18, 38, 0.25)), url('./assets/workercar_tl.png');
   background-size: cover;
   background-position: center 25%;
   padding: 60px 50px 80px;
@@ -188,7 +188,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(7, 13, 24, 0.2) 0%, rgba(7, 13, 24, 0.75) 100%);
+  background: linear-gradient(180deg, rgba(7, 14, 30, 0.1) 0%, rgba(7, 14, 30, 0.55) 100%);
   pointer-events: none;
 }
 
@@ -237,7 +237,7 @@ img {
 }
 
 .button.secondary {
-  background: rgba(9, 16, 28, 0.7);
+  background: rgba(13, 24, 50, 0.7);
   border-color: rgba(140, 163, 199, 0.35);
   color: var(--color-slate-50);
 }
@@ -256,7 +256,7 @@ img {
 
 .hero-figure-card {
   width: min(320px, 90%);
-  background: rgba(6, 12, 22, 0.7);
+  background: rgba(10, 22, 46, 0.75);
   border: 1px solid rgba(120, 150, 200, 0.2);
   border-radius: 14px;
   padding: 18px;
@@ -307,7 +307,7 @@ img {
 }
 
 .card {
-  background: rgba(11, 18, 30, 0.9);
+  background: rgba(16, 28, 56, 0.9);
   border: 1px solid rgba(120, 150, 200, 0.2);
   border-radius: 12px;
   padding: 18px 16px 20px;
@@ -379,7 +379,7 @@ img {
 
 .contact-form-wrap {
   margin-top: 28px;
-  background: rgba(10, 18, 32, 0.85);
+  background: rgba(14, 26, 52, 0.9);
   border: 1px solid rgba(120, 150, 200, 0.22);
   border-radius: 16px;
   padding: 22px;
@@ -415,7 +415,7 @@ img {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 14px;
-  background: rgba(7, 13, 24, 0.75);
+  background: rgba(10, 20, 42, 0.8);
 }
 
 .form-fieldset legend {
@@ -444,7 +444,7 @@ img {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  background: rgba(8, 14, 26, 0.9);
+  background: rgba(12, 22, 46, 0.9);
   border: 1px solid rgba(120, 150, 200, 0.3);
   color: var(--color-slate-50);
   border-radius: 10px;
@@ -452,6 +452,47 @@ img {
   font-family: var(--font-sans);
   font-size: 0.9rem;
   outline: none;
+}
+
+.reviews-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.review-card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-card .stars {
+  color: #f5a623;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.review-card p {
+  font-size: 0.85rem;
+  color: var(--color-slate-300);
+  font-style: italic;
+  flex: 1;
+  margin: 0;
+}
+
+.reviewer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reviewer strong {
+  font-size: 0.85rem;
+  color: var(--color-white);
+}
+
+.reviewer span {
+  font-size: 0.75rem;
+  color: var(--color-slate-400);
 }
 
 .contact-form input::placeholder,
@@ -501,7 +542,7 @@ img {
 }
 
 .section.dark {
-  background: linear-gradient(180deg, rgba(6, 12, 22, 0.96) 0%, rgba(9, 16, 28, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(14, 28, 58, 0.97) 0%, rgba(17, 32, 64, 0.98) 100%);
 }
 
 .jobs {
@@ -515,7 +556,7 @@ img {
   gap: 16px;
   padding: 16px 18px;
   border-radius: 12px;
-  background: rgba(12, 20, 34, 0.92);
+  background: rgba(16, 28, 56, 0.92);
   border: 1px solid rgba(120, 150, 200, 0.2);
   align-items: center;
 }
@@ -558,7 +599,7 @@ img {
   padding: 14px 16px;
   border-radius: 12px;
   border: 1px solid rgba(120, 150, 200, 0.18);
-  background: rgba(8, 15, 28, 0.92);
+  background: rgba(12, 22, 48, 0.92);
 }
 
 .list-item small {
@@ -567,7 +608,7 @@ img {
 
 .footer {
   padding: 36px 48px 26px;
-  background: linear-gradient(180deg, rgba(6, 12, 22, 0.98) 0%, rgba(7, 13, 24, 1) 100%);
+  background: linear-gradient(180deg, rgba(9, 18, 38, 0.99) 0%, rgba(8, 16, 34, 1) 100%);
   border-top: 1px solid rgba(90, 110, 160, 0.2);
 }
 
@@ -662,7 +703,7 @@ img {
 }
 
 .badge {
-  background: rgba(7, 13, 24, 0.95);
+  background: rgba(11, 22, 46, 0.95);
   border: 1px solid rgba(120, 150, 200, 0.2);
   border-radius: 12px;
   padding: 16px;
@@ -681,7 +722,7 @@ img {
 }
 
 .hero-banner {
-  background: linear-gradient(120deg, rgba(2, 8, 18, 0.65), rgba(6, 14, 26, 0.6)), url('./assets/hero.svg');
+  background: linear-gradient(120deg, rgba(5, 14, 32, 0.45), rgba(7, 18, 38, 0.3)), url('./assets/hero.svg');
   background-size: cover;
   background-position: center;
   padding: 46px 48px 52px;
@@ -690,19 +731,19 @@ img {
 }
 
 .hero-banner--services {
-  background: linear-gradient(120deg, rgba(2, 8, 18, 0.65), rgba(6, 14, 26, 0.6)), url('./assets/LivgardeCar.JPG');
+  background: linear-gradient(120deg, rgba(5, 14, 32, 0.45), rgba(7, 18, 38, 0.3)), url('./assets/LivgardeCar.JPG');
   background-size: cover;
   background-position: center 40%;
 }
 
 .hero-banner--careers {
-  background: linear-gradient(120deg, rgba(2, 8, 18, 0.65), rgba(6, 14, 26, 0.6)), url('./assets/LivgardeServices.png');
+  background: linear-gradient(120deg, rgba(5, 14, 32, 0.45), rgba(7, 18, 38, 0.3)), url('./assets/LivgardeServices.png');
   background-size: cover;
   background-position: center 10%;
 }
 
 .hero-banner--contact {
-  background: linear-gradient(120deg, rgba(2, 8, 18, 0.65), rgba(6, 14, 26, 0.6)), url('./assets/security_br.png');
+  background: linear-gradient(120deg, rgba(5, 14, 32, 0.45), rgba(7, 18, 38, 0.3)), url('./assets/security_br.png');
   background-size: cover;
   background-position: center 10%;
 }
@@ -727,7 +768,7 @@ img {
 .faq-item {
   border-radius: 12px;
   border: 1px solid rgba(120, 150, 200, 0.18);
-  background: rgba(8, 14, 26, 0.9);
+  background: rgba(12, 22, 46, 0.9);
   overflow: hidden;
 }
 
@@ -786,7 +827,7 @@ img {
 }
 
 .location-card {
-  background: rgba(8, 14, 26, 0.9);
+  background: rgba(12, 22, 46, 0.9);
   border-radius: 12px;
   border: 1px solid rgba(120, 150, 200, 0.2);
   padding: 16px;
